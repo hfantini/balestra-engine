@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Balestra2DPhysics.h" />
+    <ClInclude Include="Balestra2DRect.h" />
+    <ClInclude Include="Balestra2DSprite.h" />
+    <ClInclude Include="Balestra2DText.h" />
+    <ClInclude Include="Balestra2DWorldObject.h" />
+    <ClInclude Include="Balestra32ARGBColorFloat.h" />
+    <ClInclude Include="Balestra32ARGBColorUint.h" />
+    <ClInclude Include="BalestraAnimationEffectColor.h" />
+    <ClInclude Include="BalestraAnimationController.h" />
+    <ClInclude Include="BalestraAnimationEffectDoubleVector.h" />
+    <ClInclude Include="BalestraAnimationException.h" />
+    <ClInclude Include="BalestraAnimationSequence.h" />
+    <ClInclude Include="BalestraEngineCore.h" />
+    <ClInclude Include="BalestraFont.h" />
+    <ClInclude Include="BalestraFontLoader.h" />
+    <ClInclude Include="BalestraImageButton.h" />
+    <ClInclude Include="BalestraSoundChannel.h" />
+    <ClInclude Include="BalestraColorUtil.h" />
+    <ClInclude Include="BalestraConfiguration.h" />
+    <ClInclude Include="BalestraConfigurationSound.h" />
+    <ClInclude Include="BalestraConfigurationDecoder.h" />
+    <ClInclude Include="BalestraConfigurationGameTime.h" />
+    <ClInclude Include="BalestraConfigurationInput.h" />
+    <ClInclude Include="BalestraConfigurationPlatform.h" />
+    <ClInclude Include="BalestraConfigurationVideo.h" />
+    <ClInclude Include="BalestraConstants.h" />
+    <ClInclude Include="BalestraDataTypes.h" />
+    <ClInclude Include="BalestraConfigurationDebug.h" />
+    <ClInclude Include="BalestraDebugText.h" />
+    <ClInclude Include="BalestraDoubleVector.h" />
+    <ClInclude Include="BalestraEnvironment.h" />
+    <ClInclude Include="BalestraEnvironmentInput.h" />
+    <ClInclude Include="BalestraEnvironmentResource.h" />
+    <ClInclude Include="BalestraEnvironmentSound.h" />
+    <ClInclude Include="BalestraException.h" />
+    <ClInclude Include="BalestraGameTime.h" />
+    <ClInclude Include="BalestraGameTimeException.h" />
+    <ClInclude Include="BalestraImage.h" />
+    <ClInclude Include="BalestraImageLoader.h" />
+    <ClInclude Include="BalestraInputException.h" />
+    <ClInclude Include="BalestraInputKeyboard.h" />
+    <ClInclude Include="BalestraInputMouse.h" />
+    <ClInclude Include="BalestraMathException.h" />
+    <ClInclude Include="BalestraRenderGear.h" />
+    <ClInclude Include="BalestraResourceException.h" />
+    <ClInclude Include="BalestraSound.h" />
+    <ClInclude Include="BalestraSoundException.h" />
+    <ClInclude Include="BalestraSoundLoader.h" />
+    <ClInclude Include="BalestraTypeConverter.h" />
+    <ClInclude Include="BalestraUserCommunication.h" />
+    <ClInclude Include="BalestraMath.h" />
+    <ClInclude Include="BalestraVideoException.h" />
+    <ClInclude Include="BalestraPrecompiledHeader.h" />
+    <ClInclude Include="BalestraEnvironmentVideo.h" />
+    <ClInclude Include="BalestraCamera.h" />
+    <ClInclude Include="BalestraWorld.h" />
+    <ClInclude Include="BalestraRect.h" />
+    <ClInclude Include="BalestraAngle.h" />
+    <ClInclude Include="IBalestraAnimationEffect.h" />
+    <ClInclude Include="IBalestraDevice.h" />
+    <ClInclude Include="IBalestraResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Balestra2DPhysics.cpp" />
+    <ClCompile Include="Balestra2DRect.cpp" />
+    <ClCompile Include="Balestra2DSprite.cpp" />
+    <ClCompile Include="Balestra2DText.cpp" />
+    <ClCompile Include="Balestra2DWorldObject.cpp" />
+    <ClCompile Include="Balestra32ARGBColorFloat.cpp" />
+    <ClCompile Include="Balestra32ARGBColorUint.cpp" />
+    <ClCompile Include="BalestraAnimationController.cpp" />
+    <ClCompile Include="BalestraAnimationEffectColor.cpp" />
+    <ClCompile Include="BalestraAnimationEffectDoubleVector.cpp" />
+    <ClCompile Include="BalestraAnimationSequence.cpp" />
+    <ClCompile Include="BalestraConfigurationSound.cpp" />
+    <ClCompile Include="BalestraFont.cpp" />
+    <ClCompile Include="BalestraFontLoader.cpp" />
+    <ClCompile Include="BalestraImageButton.cpp" />
+    <ClCompile Include="BalestraSoundChannel.cpp" />
+    <ClCompile Include="BalestraColorUtil.cpp" />
+    <ClCompile Include="BalestraConfiguration.cpp" />
+    <ClCompile Include="BalestraConfigurationDebug.cpp" />
+    <ClCompile Include="BalestraConfigurationDecoder.cpp" />
+    <ClCompile Include="BalestraConfigurationGameTime.cpp" />
+    <ClCompile Include="BalestraConfigurationInput.cpp" />
+    <ClCompile Include="BalestraConfigurationPlatform.cpp" />
+    <ClCompile Include="BalestraConfigurationVideo.cpp" />
+    <ClCompile Include="BalestraDebugText.cpp" />
+    <ClCompile Include="BalestraDoubleVector.cpp" />
+    <ClCompile Include="BalestraEnvironment.cpp" />
+    <ClCompile Include="BalestraEnvironmentInput.cpp" />
+    <ClCompile Include="BalestraEnvironmentResource.cpp" />
+    <ClCompile Include="BalestraEnvironmentSound.cpp" />
+    <ClCompile Include="BalestraEnvironmentVideo.cpp" />
+    <ClCompile Include="BalestraException.cpp" />
+    <ClCompile Include="BalestraGameTime.cpp" />
+    <ClCompile Include="BalestraImage.cpp" />
+    <ClCompile Include="BalestraImageLoader.cpp" />
+    <ClCompile Include="BalestraInputKeyboard.cpp" />
+    <ClCompile Include="BalestraInputMouse.cpp" />
+    <ClCompile Include="BalestraMath.cpp" />
+    <ClCompile Include="BalestraRect.cpp" />
+    <ClCompile Include="BalestraRenderGear.cpp" />
+    <ClCompile Include="BalestraSound.cpp" />
+    <ClCompile Include="BalestraSoundLoader.cpp" />
+    <ClCompile Include="BalestraTypeConverter.cpp" />
+    <ClCompile Include="BalestraUserCommunication.cpp" />
+    <ClCompile Include="BalestraCamera.cpp" />
+    <ClCompile Include="BalestraWorld.cpp" />
+    <ClCompile Include="BalestraAngle.cpp" />
+    <ClCompile Include="IBalestraAnimationEffect.cpp" />
+    <ClCompile Include="IBalestraDevice.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72CF7366-8979-475A-803F-8E839D254731}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BalestraCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraCore\Debug</OutDir>
+    <IntDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraCore</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraCore\Release</OutDir>
+    <IntDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraCore</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>BalestraPrecompiledHeader.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

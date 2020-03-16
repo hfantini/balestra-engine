@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFFB2DEC-5394-4F26-BE96-5293DF5A4681}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BalestraWin32</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraWin32\Release\</OutDir>
+    <IntDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraWin32\</IntDir>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraWin32\Debug\</OutDir>
+    <IntDir>D:\Documentos\Projetos\Codecraft\BalestraEngine_Builds\Bin\BalestraWin32\</IntDir>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>Win32BalestraPrecompiledHeader.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\Documentos\Programacao\C\Lib\OpenGl\freetype\include;D:\Documentos\Projetos\Codecraft\BalestraEngine\Source\BalestraCore;D:\Documentos\Programacao\C\Lib\OpenGl\Glut;C:\Program Files (x86)\OpenAL 1.1 SDK\include;D:\Documentos\Programacao\C\Lib\OpenGl\devIL\include;D:\Documentos\Programacao\C\Lib\OpenGl\Glext\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>D2D1.lib;dinput8.lib;dxguid.lib;windowscodecs.lib;comsuppw.lib;Dwrite.lib;Winmm.lib;XAudio2.lib;opengl32.lib;glut32.lib;glu32.lib;ILUT.lib;ILU.lib;DevIL.lib;glext.lib;freetype.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>D:\Documentos\Projetos\Codecraft\BalestraEngine\Source\BalestraWin32\lib;D:\Documentos\Programacao\C\Lib\OpenGl\Glut;D:\Documentos\Programacao\C\Lib\OpenGl\devIL\lib;D:\Documentos\Programacao\C\Lib\OpenGl\freetype\lib;D:\Documentos\Programacao\C\Lib\OpenGl\Glext\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Documentos\Programacao\C\Lib\OpenGl\Glut;D:\Documentos\Projetos\Codecraft\BalestraEngine\Source\BalestraCore;D:\Documentos\Programacao\C\Lib\OpenGl\devIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>D2D1.lib;dinput8.lib;dxguid.lib;windowscodecs.lib;comsuppw.lib;Dwrite.lib;Winmm.lib;XAudio2.lib;opengl32.lib;ILUT.lib;ILU.lib;DevIL.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Documentos\Programacao\C\Lib\OpenGl\devIL\lib;D:\Documentos\Projetos\Codecraft\BalestraEngine\Source\BalestraWin32\lib;D:\Documentos\Programacao\C\Lib\OpenGl\Glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BalestraCore\BalestraCore.vcxproj">
+      <Project>{72cf7366-8979-475a-803f-8e839d254731}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BalestraWin32.h" />
+    <ClInclude Include="IWin32BalestraDevice.h" />
+    <ClInclude Include="Win32BalestraConfiguration.h" />
+    <ClInclude Include="Win32BalestraConfigurationInput.h" />
+    <ClInclude Include="Win32BalestraConfigurationPlatform.h" />
+    <ClInclude Include="Win32BalestraConstants.h" />
+    <ClInclude Include="Win32BalestraD2D1Bitmap.h" />
+    <ClInclude Include="Win32BalestraD2D1Environment.h" />
+    <ClInclude Include="Win32BalestraD2D1RenderGear.h" />
+    <ClInclude Include="Win32BalestraDevILImageLoader.h" />
+    <ClInclude Include="Win32BalestraFreeTypeFont.h" />
+    <ClInclude Include="Win32BalestraFreeTypeFontLoader.h" />
+    <ClInclude Include="Win32BalestraOpenGLTexture.h" />
+    <ClInclude Include="Win32BalestraOpenGLEnvironment.h" />
+    <ClInclude Include="Win32BalestraOpenGLRenderGear.h" />
+    <ClInclude Include="Win32BalestraXAudio2Environment.h" />
+    <ClInclude Include="Win32BalestraEnvironment.h" />
+    <ClInclude Include="Win32BalestraEnvironmentResource.h" />
+    <ClInclude Include="Win32BalestraGameTime.h" />
+    <ClInclude Include="Win32BalestraPlatformException.h" />
+    <ClInclude Include="Win32BalestraPlatformInput.h" />
+    <ClInclude Include="Win32BalestraPlatformKeyboard.h" />
+    <ClInclude Include="Win32BalestraPlatformKeyboardKeys.h" />
+    <ClInclude Include="Win32BalestraPlatformMouse.h" />
+    <ClInclude Include="Win32BalestraPlatformMouseButtons.h" />
+    <ClInclude Include="Win32BalestraPlatformUtil.h" />
+    <ClInclude Include="Win32BalestraPrecompiledHeader.h" />
+    <ClInclude Include="Win32BalestraUserCommunication.h" />
+    <ClInclude Include="Win32BalestraWICImageLoader.h" />
+    <ClInclude Include="Win32BalestraXAudio2SoundLoader.h" />
+    <ClInclude Include="Win32BalestraXAudio2Utils.h" />
+    <ClInclude Include="Win32BalestraXAudio2Wave.h" />
+    <ClInclude Include="Win32BalestraXAudio2Channel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Win32BalestraConfiguration.cpp" />
+    <ClCompile Include="Win32BalestraConfigurationInput.cpp" />
+    <ClCompile Include="Win32BalestraConfigurationPlatform.cpp" />
+    <ClCompile Include="Win32BalestraD2D1Bitmap.cpp" />
+    <ClCompile Include="Win32BalestraD2D1Environment.cpp" />
+    <ClCompile Include="Win32BalestraD2D1RenderGear.cpp" />
+    <ClCompile Include="Win32BalestraDevILImageLoader.cpp" />
+    <ClCompile Include="Win32BalestraFreeTypeFont.cpp" />
+    <ClCompile Include="Win32BalestraFreeTypeFontLoader.cpp" />
+    <ClCompile Include="Win32BalestraOpenGLEnvironment.cpp" />
+    <ClCompile Include="Win32BalestraOpenGLRenderGear.cpp" />
+    <ClCompile Include="Win32BalestraOpenGLTexture.cpp" />
+    <ClCompile Include="Win32BalestraXAudio2Environment.cpp" />
+    <ClCompile Include="Win32BalestraEnvironment.cpp" />
+    <ClCompile Include="Win32BalestraEnvironmentResource.cpp" />
+    <ClCompile Include="Win32BalestraGameTime.cpp" />
+    <ClCompile Include="Win32BalestraPlatformInput.cpp" />
+    <ClCompile Include="Win32BalestraPlatformKeyboard.cpp" />
+    <ClCompile Include="Win32BalestraPlatformMouse.cpp" />
+    <ClCompile Include="Win32BalestraPlatformUtil.cpp" />
+    <ClCompile Include="Win32BalestraUserCommunication.cpp" />
+    <ClCompile Include="Win32BalestraWICImageLoader.cpp" />
+    <ClCompile Include="Win32BalestraXAudio2SoundLoader.cpp" />
+    <ClCompile Include="Win32BalestraXAudio2Utils.cpp" />
+    <ClCompile Include="Win32BalestraXAudio2Wave.cpp" />
+    <ClCompile Include="Win32BalestraXAudio2Channel.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
